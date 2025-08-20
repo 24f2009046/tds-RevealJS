@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Quarterly Earnings Report</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Reveal.js styles -->
+  <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/theme/black.css" id="theme">
+  <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      
+      <!-- Contact Slide (email) -->
+      <section>
+        <h2>Technical Consultant</h2>
+        <p>Email: 24f2009046@ds.study.iitm.ac.in</p>
+      </section>
+      
+      <!-- Markdown Slide -->
+      <section data-markdown>
+        <textarea data-template>
+          ## Financial Highlights (Q2 2025)
+          - Revenue Growth: **20% YoY**
+          - Net Profit Margin: **15%**
+          - Free Cash Flow: **$1.2B**
+          <!-- .element: class="fragment" data-fragment-index="1" -->
+        </textarea>
+      </section>
+      
+      <!-- Animated Elements (Fragments) -->
+      <section>
+        <h2>Regional Revenue Breakdown</h2>
+        <ul>
+          <li class="fragment">North America: $2.1B</li>
+          <li class="fragment">Europe: $1.3B</li>
+          <li class="fragment">APAC: $900M</li>
+        </ul>
+      </section>
+      
+      <!-- Code Sample with Syntax Highlighting -->
+      <section>
+        <h2>Data Analysis (Python)</h2>
+        <pre><code data-trim data-noescape class="language-python">
+import pandas as pd
+df = pd.read_csv('earnings.csv')
+print(df.describe())
+        </code></pre>
+      </section>
+      
+      <!-- Mathematical Equation -->
+      <section>
+        <h2>Key Financial Formula</h2>
+        <p>
+          $$ ROE = \frac{Net\ Income}{Shareholder's\ Equity} $$
+        </p>
+      </section>
+      
+      <!-- Speaker Notes Example -->
+      <section>
+        <h2>Summary & Outlook</h2>
+        <aside class="notes">
+          Discuss improved profitability and sustained growth momentum. Address questions about market conditions and upcoming initiatives.
+        </aside>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- Reveal.js scripts -->
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script src="plugin/math/math.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      plugins: [ RevealMarkdown, RevealHighlight, RevealMath, RevealNotes ]
+    });
+  </script>
+</body>
+</html>
+
